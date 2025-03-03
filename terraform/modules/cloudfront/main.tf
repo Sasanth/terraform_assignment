@@ -1,10 +1,10 @@
 resource "aws_cloudfront_distribution" "cloudfront_distribution" {
   origin {
-    domain_name              = var.origin_id
-    origin_id                = var.origin_id
+    domain_name = var.origin_id
+    origin_id   = var.origin_id
   }
 
-  enabled = true
+  enabled         = true
   is_ipv6_enabled = true
 
   default_cache_behavior {

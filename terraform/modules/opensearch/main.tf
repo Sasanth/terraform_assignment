@@ -9,7 +9,7 @@ resource "aws_opensearch_domain" "main" {
 
   engine_version = "Elasticsearch_7.10"
   cluster_config {
-    instance_type = "t2.small.search"
+    instance_type  = "t2.small.search"
     instance_count = 2
   }
 
@@ -34,7 +34,7 @@ resource "aws_opensearch_domain" "main" {
         "Resource" : "arn:aws:es:${data.aws_region.current.name}:${data.aws_caller_identity.current.account_id}:domain/my-opensearch-domain/*",
         "Condition" : {
           "IpAddress" : {
-            "aws:SourceIp" : ["10.0.0.0/16"]  # Allow only VPC IP ranges
+            "aws:SourceIp" : ["10.0.0.0/16"] # Allow only VPC IP ranges
           }
         }
       }
@@ -42,6 +42,6 @@ resource "aws_opensearch_domain" "main" {
   })
 
   domain_endpoint_options {
-    enforce_https = true  # Ensure that the connection to OpenSearch is always encrypted
+    enforce_https = true # Ensure that the connection to OpenSearch is always encrypted
   }
 }

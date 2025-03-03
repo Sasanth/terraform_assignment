@@ -1,4 +1,4 @@
 variable "opensearch_name" {
   description = "Opensearch name"
-  type = string
+  type        = string
 }

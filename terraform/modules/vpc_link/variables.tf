@@ -1,6 +1,6 @@
 variable "vpc_link_name" {
   description = "VPC Link name"
-  type = string
+  type        = string
 }
 
 variable "vpc_link_sg_ids" {
