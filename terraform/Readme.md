@@ -16,7 +16,6 @@ Before using this Terraform configuration, ensure you have:
 - Terraform **1.x** installed ([Download Terraform](https://www.terraform.io/downloads))
 - AWS CLI configured with appropriate IAM permissions ([AWS CLI Setup](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html))
 - An S3 bucket for remote state storage
-- A DynamoDB table for state locking
 
 ## Repository Structure
 ```

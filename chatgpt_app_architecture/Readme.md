@@ -19,7 +19,7 @@ This repository contains the AWS architecture design for deploying the ChatGPT S
 6. Enable CloudWatch for monitoring and alerting.
 
 ## Architecture Diagram
-Refer to `architecture_diagram.png` for the visual representation.
+Refer to `ChatGPT Store Application.png` for the visual representation.
 
 ## Security Best Practices
 - Use IAM roles with least privilege access.
